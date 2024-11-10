@@ -61,11 +61,14 @@ section {
 
 .section-3 {
     background: linear-gradient(360deg, rgba(2, 0, 36, 1) 0%, rgb(49, 72, 105) 53%);
-
+    display: flex;
+    flex-direction: column;
 }
 
 .section-4 {
     background: linear-gradient(360deg, rgba(2, 0, 36, 1) 0%, rgb(49, 72, 105) 53%);
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -358,11 +361,13 @@ span {
     justify-content: flex-start;
     font-size: 1.5rem;
     flex-direction: column;
+    text-align: justify;
 }
 
 .skill_title {
     font-size: 3rem;
     font-weight: 700;
+    color: #01111f;
 }
 
 @media (max-width: 600px) {
@@ -383,5 +388,48 @@ span {
 
     .skill_title {
         text-align: center;
+        color: #01111f;
     }
+}
+
+/* Projects */
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.projbox {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border: 0.5px solid #fff;
+    padding: 20px;
+    border-radius: 2rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    flex-basis: 45%;
+    width: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.projbox:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.proj_desc {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.proj_title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #01111f;
 }
